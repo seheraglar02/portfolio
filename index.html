@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seher Aglar — Portfolio</title>
+  <meta
+    name="description"
+    content="Portfolio von Seher Aglar — Medieninformatikerin, UX/UI Designerin & Web-Entwicklerin."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@1&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Hauptnavigation">
+    <a href="#home" class="nav__logo" aria-label="Seher Aglar — Startseite">SA</a>
+
+    <ul class="nav__links">
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#skills">Kompetenzen</a></li>
+      <li><a href="#projects">Projekte</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+
+    <button class="nav__menu-btn" aria-label="Menü öffnen" aria-expanded="false" id="menuBtn">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <ul>
+      <li><a href="#about" class="mobile-menu__link">Über mich</a></li>
+      <li><a href="#skills" class="mobile-menu__link">Kompetenzen</a></li>
+      <li><a href="#projects" class="mobile-menu__link">Projekte</a></li>
+      <li><a href="#contact" class="mobile-menu__link">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero__bg"></div>
+  <div class="hero__overlay"></div>
+
+  <div class="hero__content">
+    <div class="hero__text">
+      <p class="hero__intro" data-animate="0" data-animate-dir="down">Hey, ich bin</p>
+      <h1 class="hero__title">
+        <span data-animate="1" data-animate-dir="left">Seher</span>
+        <span data-animate="2" data-animate-dir="right">Aglar</span>
+      </h1>
+    <div> <p class="hero__eyebrow" data-animate="3" data-animate-dir="up">MEDIENINFORMATIK & UX / WEB</p></div>
+    </div>
+
+    <div class="hero__cta" data-animate="4" data-animate-dir="up">
+      <a href="#projects" class="btn btn--primary">Projekte ansehen</a>
+      <a href="#contact" class="btn btn--ghost">Kontakt aufnehmen</a>
+    </div>
+
+    <p class="hero__tagline" data-animate="5" data-animate-dir="right">
+      Ich denke in Strukturen. <br>Ich gestalte Erlebnisse.
+    </p>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+  <!-- FACTS BANNER -->
+  <section class="facts" aria-label="Kurzprofil">
+    <button class="facts__toggle" id="factsToggle" aria-expanded="false" aria-controls="factsGrid">
+      <span>Kurzprofil</span>
+      <svg class="facts__toggle-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+        <line x1="7" y1="1" x2="7" y2="13"/>
+        <line x1="1" y1="7" x2="13" y2="7"/>
+      </svg>
+    </button>
+    <div class="facts__grid" id="factsGrid">
+      <div class="facts__item" data-reveal="0">
+        <span class="facts__label">Studium</span>
+        <p class="facts__value">Medieninformatik (B.Sc.)</p>
+      </div>
+      <div class="facts__item" data-reveal="1">
+        <span class="facts__label">Schwerpunkte</span>
+        <p class="facts__value">Business Process Management<br>Verteilte Systeme</p>
+      </div>
+      <div class="facts__item" data-reveal="2">
+        <span class="facts__label">Erfahrung</span>
+        <p class="facts__value">Bosch Rexroth<br><span class="facts__sub">E-Learning &amp; Prozessoptimierung</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about__inner">
+
+      <!-- Left: headline + body -->
+      <div class="about__left" data-reveal="0" data-reveal-dir="left">
+        <span class="about__eyebrow">Über mich</span>
+        <h2 class="about__headline">Von der Analyse<br>zur Lösung</h2>
+        <p class="about__text">
+          Mit Medieninformatik als Basis verbinde ich technisches Verständnis, gestalterisches Denken und strukturiertes Vorgehen. Meine Stärke liegt darin, komplexe Zusammenhänge zu analysieren, sie klar aufzubereiten und in funktionierende Lösungen zu übersetzen.
+        </p>
+        <p class="about__text">
+          Ich arbeite an der Schnittstelle von UX Design, E-Learning und Projektmanagement — und kann sowohl konzeptionell als auch praktisch mehrere Projektphasen eigenständig abdecken.
+        </p>
+      </div>
+
+      <!-- Right: traits with icons -->
+      <div class="about__right">
+
+        <div class="about__trait" data-reveal="1">
+          <div class="about__trait-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="9" y1="6" x2="20" y2="6"/><line x1="9" y1="12" x2="20" y2="12"/><line x1="9" y1="18" x2="20" y2="18"/>
+              <polyline points="4 6 5 7 7 5"/><polyline points="4 12 5 13 7 11"/><polyline points="4 18 5 19 7 17"/>
+            </svg>
+          </div>
+          <div class="about__trait-content">
+            <span class="about__trait-title">Strukturiert &amp; analytisch</span>
+            <p class="about__trait-desc">Ich analysiere Anforderungen, bevor ich anfange — und halte Prozesse durchgängig dokumentiert und nachvollziehbar.</p>
+          </div>
+        </div>
+
+        <div class="about__trait" data-reveal="2">
+          <div class="about__trait-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="about__trait-content">
+            <span class="about__trait-title">Nutzerorientiert</span>
+            <p class="about__trait-desc">Ob E-Learning-Kurs oder Interface — ich gestalte immer aus der Perspektive der Person, die das Ergebnis nutzt.</p>
+          </div>
+        </div>
+
+        <div class="about__trait" data-reveal="3">
+          <div class="about__trait-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+              <polyline points="2 17 12 22 22 17"/>
+              <polyline points="2 12 12 17 22 12"/>
+            </svg>
+          </div>
+          <div class="about__trait-content">
+            <span class="about__trait-title">Vielseitig einsetzbar</span>
+            <p class="about__trait-desc">Von der Konzeption über Design und Entwicklung bis zur Prozessdokumentation — ich decke mehrere Rollen ab.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE / SCROLL REVEAL -->
+  <section class="quote-section" id="quote" aria-label="Philosophie">
+    <div class="quote-sticky">
+      <span class="quote-label">Leitgedanke</span>
+      <p class="quote-text" data-quote>Die besten <em class="quote-em">digitalen Erlebnisse</em> entstehen dort, wo Technologie unsichtbar wird und der <em class="quote-em">Mensch</em> im <em class="quote-em">Mittelpunkt</em> steht.</p>
+    </div>
+  </section>
+
+<section class="skills" id="skills">
+
+  <div class="skills__scroll-track" id="skillsScrollTrack">
+    <div class="skills__sticky">
+      <div class="skills__sticky-inner">
+
+        <div class="skills__head">
+          <span class="skills__eyebrow" data-reveal="0">Kompetenzen</span>
+          <h2 class="skills__title" data-reveal="1">Was ich<br>mitbringe</h2>
+          <div class="skills__accent-line" id="skillsAccentLine"></div>
+        </div>
+
+        <div class="skills__stage">
+          <div class="skills__stage-left">
+            <p class="skills__big-num" id="skillsBigNum" aria-hidden="true">01</p>
+            <p class="skills__cat-name" id="skillsCatName"></p>
+            <div class="skills__prog-dots" id="skillsProgDots" aria-hidden="true"></div>
+          </div>
+          <div class="skills__stage-right" id="skillsStageRight" aria-live="polite"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ARBEITSWEISE & METHODEN — ausgeblendet, später wieder aktivieren
+  <div class="skills__methods-outer">
+    <div class="skills__methods-wrap">
+      <div class="methods-section-head">
+        <span class="methods-eyebrow" data-reveal="0">Arbeitsweise &amp; Methoden</span>
+        <h2 class="methods-title" data-reveal="1">Wie ich<br>vorgehe</h2>
+      </div>
+      <div id="methodsList"></div>
+    </div>
+  </div>
+  -->
+
+</section>
+      
+
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="projects__inner">
+      <div class="projects__header">
+        <span class="projects__eyebrow">Projekte</span>
+        <h2 class="projects__title">Strukturierte Case Studies</h2>
+        <p class="projects__desc">Jedes Projekt zeigt nicht nur ein Ergebnis — sondern wie ich von der Problemstellung zur Lösung komme.</p>
+      </div>
+      <ul class="projects-grid" id="projectsGrid" aria-label="Projektliste"></ul>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Schließen">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

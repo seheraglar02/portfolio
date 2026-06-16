@@ -4,18 +4,20 @@ const projects = [
     title: "E-Learning & Prozessoptimierung",
     company: "Bosch Rexroth",
     color: "#2563EB",
-    tags: ["E-Learning", "Prozessoptimierung", "Instructional Design"],
-    accentTag: "Instructional Design",
+    tags: ["E-Learning", "Prozessoptimierung", "Multimedia"],
+    accentTag: "E-Learning",
     role: "E-Learning Entwicklerin & Content Designerin",
-summary: "Aufbereitung komplexer technischer Inhalte für internationale Zielgruppen, von der Materialstrukturierung bis zur Prozessstandardisierung.",    challenge: "Technisch komplexe Inhalte (Text, Bild, Video) mussten für verschiedene internationale Zielgruppen verständlich, konsistent und skalierbar aufbereitet werden.",
+    summary: "Erstellung und Weiterentwicklung digitaler Lern- und Kommunikationsinhalte in der Medien-Abteilung, von der Konzeption multimedialer Inhalte bis zur Recherche von KI-Tools als Prozessoptimierung.",
+    challenge: "Digitale Lern- und Kommunikationsinhalte für verschiedene Fachbereiche mussten geplant, erstellt, gepflegt und kontinuierlich weiterentwickelt werden, bei gleichzeitig enger Abstimmung mit unterschiedlichen Stakeholdern.",
     approach: [
-      "Analyse bestehender Materialien und Identifikation von Inkonsistenzen",
-      "Mitarbeit an der Lokalisierung für internationale Märkte",
-      "Erstellung von Styleguides und Redaktionsleitfäden zur Standardisierung",
-      "Optimierung interner Produktionsprozesse durch Dokumentation von Workflows",
-      "Recherche zu KI-Tools zur Effizienzsteigerung im E-Learning-Bereich"
+      "Erstellung und Weiterentwicklung digitaler Lern- und Kommunikationsinhalte in der Medien-Abteilung",
+      "Planung, Konzeption, Erstellung und Umsetzung multimedialer Inhalte",
+      "Enge Zusammenarbeit mit verschiedenen Fachbereichen",
+      "Analyse von Prozessen und Entwicklung von Lösungen zur Verbesserung der Content-Erstellung und Qualitätssicherung",
+      "Pflege von Content auf verschiedenen Plattformen",
+      "Recherche zu KI-Tools für die Content-Erstellung als Maßnahme zur Prozessoptimierung"
     ],
-    result: "Einheitlichere Content-Qualität durch dokumentierte Standards. Reduzierter Abstimmungsaufwand durch klare Prozessvorgaben. Bessere Skalierbarkeit durch wiederverwendbare Vorlagen und Leitfäden.",
+    result: "Kontinuierliche Weiterentwicklung digitaler Lernmaterialien. Effizientere Content-Produktion durch strukturierte Zusammenarbeit mit Fachbereichen. Identifizierung von KI-gestützten Optimierungspotenzialen in der Content-Erstellung.",
     tools: ["Articulate 360", "MS Office", "Adobe CC"]
   },
   {
@@ -31,32 +33,34 @@ summary: "Aufbereitung komplexer technischer Inhalte für internationale Zielgru
     approach: [
       "Systematische Analyse bestehender Prozesse (IST-Analyse)",
       "Identifikation von Engpässen und Verbesserungspotenzialen",
+      "Aufzeichnung der Prozesse mit BPMN 2.0",
       "Entwicklung eines standardisierten SOLL-Prozesses mit klaren Phasen und Übergaben",
-      "Erstellung eines Autorenleitfadens als operative Prozessdokumentation",
-      "Validierung des Leitfadens gegen Praxisanforderungen"
+      "Erstellung von Styleguides und standardisierten Dokumenten",
+      "Erstellung eines Autorenleitfadens als operative Prozessdokumentation"
     ],
-    result: "Vollständig dokumentierter Standardprozess für die E-Learning-Produktion. Praktisch einsetzbarer Autorenleitfaden. Nachweisbar reduzierter Abstimmungsaufwand in simulierten Durchläufen.",
-    tools: ["MS Office", "Prozessmodellierung", "BPMN"]
+    result: "Vollständig dokumentierter Standardprozess für die E-Learning-Produktion. Praktisch einsetzbarer Autorenleitfaden. Erstellte Styleguides und standardisierte Dokumente als dauerhaft nutzbare Grundlage.",
+    tools: ["MS Office", "BPMN 2.0", "Prozessmodellierung"]
   },
   {
     id: 3,
-    title: "Softwareprojekt: Autorennspiel & Client-Server-Spiel",
-    company: "Hochschulprojekt · Teamarbeit",
-    color: "#059669",
-    tags: ["Projektmanagement", "QA", "Agile"],
-    accentTag: "Agile",
-    role: "Entwicklerin · Testerin  · Anforderungsanalystin",
-    summary: "Zwei Softwareprojekte mit agiler Arbeitsweise, vom Lasten-/Pflichtenheft bis zur systematischen Qualitätssicherung.",
-    challenge: "Komplexe Softwareprojekte mit Teamkoordination, unklaren Anforderungen zu Beginn und dem Bedarf an strukturierter Qualitätssicherung über mehrere Entwicklungszyklen.",
+    title: "KI PowerPoint Add-In",
+    company: "Hochschulprojekt · Team",
+    color: "#BE185D",
+    tags: ["Produktentwicklung", "UX/UI", "KI"],
+    accentTag: "Produktentwicklung",
+    role: "Konzept · Design · Entwicklung",
+    summary: "Entwicklung eines KI-gestützten PowerPoint Add-Ins für Schüler und Studierende, von der Planung über wöchentliche Team-Meetings bis zur finalen Umsetzung.",
+    challenge: "Ein KI-Tool sollte direkt in PowerPoint integriert werden, um Schüler und Studierende bei der Präsentationserstellung zu unterstützen, mit klar definierten Anforderungen, regelmäßigen Updates und einer nutzerfreundlichen Umsetzung.",
     approach: [
-      "Erstellung von Lasten- und Pflichtenheft zur Anforderungsdokumentation",
-      "Einführung agiler Arbeitsweise mit Scrumban (Sprint-Planung, Backlog, Retrospektiven)",
-      "Eigenständige Entwicklung eines Autorennspiel-Prototyps",
-      "Mitarbeit am verteilten Client-Server-Spiel im Team",
-      "Entwicklung systematischer Testfälle und Durchführung von QA-Zyklen"
+      "Planung und Definition der Anforderungen im Team",
+      "Wöchentliche Team-Meetings zur Abstimmung und Weiterentwicklung",
+      "Größere Feature-Updates alle drei Monate",
+      "Prototyping: Interaktiver Klick-Prototyp des Add-Ins",
+      "Technische Umsetzung mit HTML, CSS und JavaScript sowie Verknüpfung der ChatGPT API",
+      "Evaluation der Nutzerfreundlichkeit (UX/UI)"
     ],
-    result: "Funktionierende Softwareprodukte innerhalb des Projektzeitraums. Vollständige Projektdokumentation. Nachvollziehbare Qualitätssicherung durch strukturierte Testfälle.",
-    tools: ["Unity", "C#", "Scrumban", "MS Office", "Testing Tools"]
+    result: "Funktionsfähiges KI-Add-In direkt in PowerPoint integriert. Nutzerfreundliche Oberfläche nach UX/UI-Evaluation. Strukturierter Entwicklungsprozess mit regelmäßigen Releases.",
+    tools: ["HTML", "CSS", "JavaScript", "PowerPoint API", "ChatGPT API", "Figma"]
   },
   {
     id: 4,
@@ -99,24 +103,23 @@ challenge: "Komplexe Datensätze sollten für ein nicht-technisches Publikum ver
   },
   {
     id: 6,
-    title: "KI PowerPoint Add-In",
-    company: "Hochschulprojekt · Team",
-    color: "#BE185D",
-    tags: ["Produktentwicklung", "UX/UI", "KI"],
-    accentTag: "Produktentwicklung",
-    role: "Konzept · Design · Entwicklung",
-    summary: "Entwicklung eines KI-gestützten PowerPoint Add-Ins für Schüler und Studierende, von der Planung über wöchentliche Team-Meetings bis zur finalen Umsetzung.",
-    challenge: "Ein KI-Tool sollte direkt in PowerPoint integriert werden, um Schüler und Studierende bei der Präsentationserstellung zu unterstützen, mit klar definierten Anforderungen, regelmäßigen Updates und einer nutzerfreundlichen Umsetzung.",
+    title: "Softwareprojekt: Autorennspiel & Client-Server-Spiel",
+    company: "Hochschulprojekt · Teamarbeit",
+    color: "#059669",
+    tags: ["Projektmanagement", "QA", "Agile"],
+    accentTag: "Agile",
+    role: "Entwicklerin · Testerin · Anforderungsanalystin",
+    summary: "Zwei Softwareprojekte mit agiler Arbeitsweise, vom Lasten-/Pflichtenheft bis zur systematischen Qualitätssicherung.",
+    challenge: "Komplexe Softwareprojekte mit Teamkoordination, unklaren Anforderungen zu Beginn und dem Bedarf an strukturierter Qualitätssicherung über mehrere Entwicklungszyklen.",
     approach: [
-      "Planung und Definition der Anforderungen im Team",
-      "Wöchentliche Team-Meetings zur Abstimmung und Weiterentwicklung",
-      "Größere Feature-Updates alle drei Monate",
-      "Prototyping: Interaktiver Klick-Prototyp des Add-Ins",
-      "Technische Umsetzung mit HTML, CSS und JavaScript sowie Verknüpfung der ChatGPT API",
-      "Evaluation der Nutzerfreundlichkeit (UX/UI)"
+      "Erstellung von Lasten- und Pflichtenheft zur Anforderungsdokumentation",
+      "Einführung agiler Arbeitsweise mit Scrumban (Sprint-Planung, Backlog, Retrospektiven)",
+      "Eigenständige Entwicklung eines Autorennspiel-Prototyps",
+      "Mitarbeit am verteilten Client-Server-Spiel im Team",
+      "Entwicklung systematischer Testfälle und Durchführung von QA-Zyklen"
     ],
-    result: "Funktionsfähiges KI-Add-In direkt in PowerPoint integriert. Nutzerfreundliche Oberfläche nach UX/UI-Evaluation. Strukturierter Entwicklungsprozess mit regelmäßigen Releases.",
-    tools: ["HTML", "CSS", "JavaScript", "PowerPoint API", "ChatGPT API", "Figma"]
+    result: "Funktionierende Softwareprodukte innerhalb des Projektzeitraums. Vollständige Projektdokumentation. Nachvollziehbare Qualitätssicherung durch strukturierte Testfälle.",
+    tools: ["Unity", "C#", "Scrumban", "MS Office", "Testing Tools"]
   },
 ];
 

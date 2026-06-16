@@ -48,7 +48,7 @@
   </div>
 
   <!-- HERO -->
-<section class="hero" id="home">
+<section class="hero" id="home" data-nav-theme="dark">
   <div class="hero__bg"></div>
   <div class="hero__overlay"></div>
 
@@ -79,7 +79,7 @@
 </section>
 
   <!-- FACTS BANNER -->
-  <section class="facts" aria-label="Kurzprofil">
+  <section class="facts" aria-label="Kurzprofil" data-nav-theme="light">
     <button class="facts__toggle" id="factsToggle" aria-expanded="false" aria-controls="factsGrid">
       <span>Kurzprofil</span>
       <svg class="facts__toggle-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
@@ -97,14 +97,14 @@
         <p class="facts__value">Business Process Management<br>Verteilte Systeme</p>
       </div>
       <div class="facts__item" data-reveal="2">
-        <span class="facts__label">Erfahrung</span>
+        <span class="facts__label">Berufliche Erfahrung</span>
         <p class="facts__value">Bosch Rexroth<br><span class="facts__sub">E-Learning &amp; Prozessoptimierung</span></p>
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section class="about" id="about">
+  <section class="about" id="about" data-nav-theme="light">
     <div class="about__inner">
 
       <!-- Left: headline + body -->
@@ -115,7 +115,7 @@
           Mit Medieninformatik als Basis verbinde ich technisches Verständnis, gestalterisches Denken und strukturiertes Vorgehen. Meine Stärke liegt darin, komplexe Zusammenhänge zu analysieren, sie klar aufzubereiten und in funktionierende Lösungen zu übersetzen.
         </p>
         <p class="about__text">
-          Ich arbeite an der Schnittstelle von UX Design, E-Learning und Projektmanagement — und kann sowohl konzeptionell als auch praktisch mehrere Projektphasen eigenständig abdecken.
+          Ich arbeite an der Schnittstelle von UX Design, E-Learning und Projektmanagement und kann sowohl konzeptionell als auch praktisch mehrere Projektphasen eigenständig abdecken.
         </p>
       </div>
 
@@ -131,7 +131,7 @@
           </div>
           <div class="about__trait-content">
             <span class="about__trait-title">Strukturiert &amp; analytisch</span>
-            <p class="about__trait-desc">Ich analysiere Anforderungen, bevor ich anfange — und halte Prozesse durchgängig dokumentiert und nachvollziehbar.</p>
+            <p class="about__trait-desc">Ich analysiere Anforderungen, bevor ich anfange und halte Prozesse durchgängig dokumentiert und nachvollziehbar.</p>
           </div>
         </div>
 
@@ -144,7 +144,7 @@
           </div>
           <div class="about__trait-content">
             <span class="about__trait-title">Nutzerorientiert</span>
-            <p class="about__trait-desc">Ob E-Learning-Kurs oder Interface — ich gestalte immer aus der Perspektive der Person, die das Ergebnis nutzt.</p>
+            <p class="about__trait-desc">Ob E-Learning-Kurs oder Interface, ich gestalte immer aus der Perspektive der Person, die das Ergebnis nutzt.</p>
           </div>
         </div>
 
@@ -158,7 +158,7 @@
           </div>
           <div class="about__trait-content">
             <span class="about__trait-title">Vielseitig einsetzbar</span>
-            <p class="about__trait-desc">Von der Konzeption über Design und Entwicklung bis zur Prozessdokumentation — ich decke mehrere Rollen ab.</p>
+            <p class="about__trait-desc">Von der Konzeption über Design und Entwicklung bis zur Prozessdokumentation, ich decke mehrere Rollen ab.</p>
           </div>
         </div>
 
@@ -167,14 +167,14 @@
   </section>
 
   <!-- QUOTE / SCROLL REVEAL -->
-  <section class="quote-section" id="quote" aria-label="Philosophie">
+  <section class="quote-section" id="quote" aria-label="Philosophie" data-nav-theme="dark">
     <div class="quote-sticky">
       <span class="quote-label">Leitgedanke</span>
       <p class="quote-text" data-quote>Die besten <em class="quote-em">digitalen Erlebnisse</em> entstehen dort, wo Technologie unsichtbar wird und der <em class="quote-em">Mensch</em> im <em class="quote-em">Mittelpunkt</em> steht.</p>
     </div>
   </section>
 
-<section class="skills" id="skills">
+<section class="skills" id="skills" data-nav-theme="light">
 
   <div class="skills__scroll-track" id="skillsScrollTrack">
     <div class="skills__sticky">
@@ -216,12 +216,12 @@
 
 
   <!-- PROJECTS -->
-  <section class="projects" id="projects">
+  <section class="projects" id="projects" data-nav-theme="light">
     <div class="projects__inner">
       <div class="projects__header">
         <span class="projects__eyebrow">Projekte</span>
-        <h2 class="projects__title">Strukturierte Case Studies</h2>
-        <p class="projects__desc">Jedes Projekt zeigt nicht nur ein Ergebnis — sondern wie ich von der Problemstellung zur Lösung komme.</p>
+        <h2 class="projects__title">Praktische Erfahrungen</h2>
+        <p class="projects__desc">Jedes Projekt zeigt nicht nur ein Ergebnis, sondern wie ich von der Problemstellung zur Lösung komme.</p>
       </div>
       <ul class="projects-grid" id="projectsGrid" aria-label="Projektliste"></ul>
     </div>
@@ -238,6 +238,32 @@
       <div id="modalContent"></div>
     </div>
   </div>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact" data-nav-theme="dark">
+    <div class="contact__inner">
+      <span class="contact__eyebrow">Kontakt</span>
+      <h2 class="contact__title">Lass uns reden.</h2>
+      <p class="contact__text">Du hast ein Projekt, eine Idee oder eine offene Stelle?<br>Ich freue mich über deine Nachricht.</p>
+      <div class="contact__links">
+        <a href="mailto:seher.aglar@gmx.de" class="btn btn--primary contact__btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="M2 7l10 7 10-7"/>
+          </svg>
+          seher.aglar@gmx.de
+        </a>
+        <a href="https://www.linkedin.com/in/seher-aglar-85261b39a" target="_blank" rel="noopener noreferrer" class="btn btn--ghost contact__btn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>

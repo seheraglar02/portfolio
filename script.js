@@ -7,8 +7,7 @@ const projects = [
     tags: ["E-Learning", "Prozessoptimierung", "Instructional Design"],
     accentTag: "Instructional Design",
     role: "E-Learning Entwicklerin & Content Designerin",
-    summary: "Aufbereitung komplexer technischer Inhalte für internationale Zielgruppen — von der Materialstrukturierung bis zur Prozessstandardisierung.",
-    challenge: "Technisch komplexe Inhalte (Text, Bild, Video) mussten für verschiedene internationale Zielgruppen verständlich, konsistent und skalierbar aufbereitet werden.",
+summary: "Aufbereitung komplexer technischer Inhalte für internationale Zielgruppen, von der Materialstrukturierung bis zur Prozessstandardisierung.",    challenge: "Technisch komplexe Inhalte (Text, Bild, Video) mussten für verschiedene internationale Zielgruppen verständlich, konsistent und skalierbar aufbereitet werden.",
     approach: [
       "Analyse bestehender Materialien und Identifikation von Inkonsistenzen",
       "Mitarbeit an der Lokalisierung für internationale Märkte",
@@ -42,12 +41,12 @@ const projects = [
   {
     id: 3,
     title: "Softwareprojekt: Autorennspiel & Client-Server-Spiel",
-    company: "Hochschulprojekt",
+    company: "Hochschulprojekt · Teamarbeit",
     color: "#059669",
     tags: ["Projektmanagement", "QA", "Agile"],
     accentTag: "Agile",
-    role: "QA-Verantwortliche · Test-Autorin",
-    summary: "Zwei Softwareprojekte mit agiler Arbeitsweise — vom Lasten-/Pflichtenheft bis zur systematischen Qualitätssicherung.",
+    role: "Entwicklerin · Testerin  · Anforderungsanalystin",
+    summary: "Zwei Softwareprojekte mit agiler Arbeitsweise, vom Lasten-/Pflichtenheft bis zur systematischen Qualitätssicherung.",
     challenge: "Komplexe Softwareprojekte mit Teamkoordination, unklaren Anforderungen zu Beginn und dem Bedarf an strukturierter Qualitätssicherung über mehrere Entwicklungszyklen.",
     approach: [
       "Erstellung von Lasten- und Pflichtenheft zur Anforderungsdokumentation",
@@ -68,8 +67,7 @@ const projects = [
     accentTag: "UX Design",
     role: "UX/UI Designerin",
     summary: "Vollständiges Redesign einer bestehenden Website mit Fokus auf Nutzerführung, visuelle Hierarchie und UI-Prinzipien.",
-    challenge: "Die bestehende Website hatte Usability-Schwächen: unklare Navigation, inkonsistente visuelle Hierarchie und mangelnde Nutzerführung — vor allem auf mobilen Endgeräten.",
-    approach: [
+challenge: "Die bestehende Website wies mehrere Usability-Schwächen auf: eine unklare Navigation, eine inkonsistente visuelle Hierarchie und eine unzureichende Nutzerführung, insbesondere auf mobilen Endgeräten.",    approach: [
       "Heuristische Evaluation der bestehenden Website",
       "Analyse der Nutzerführung und Identifikation kritischer Schwachstellen",
       "Entwicklung eines neuen Informationsarchitektur-Konzepts",
@@ -87,8 +85,8 @@ const projects = [
     tags: ["Datenvisualisierung", "JavaScript", "Teamarbeit"],
     accentTag: "Datenvisualisierung",
     role: "Entwicklerin · Konzeption",
-    summary: "Entwicklung einer interaktiven Microsite zur Visualisierung komplexer Daten — verständlich und zugänglich für Endnutzer.",
-    challenge: "Komplexe Datensätze sollten für ein nicht-technisches Publikum verständlich gemacht werden — interaktiv, visuell ansprechend und ohne Vorwissen nutzbar.",
+summary: "Entwicklung einer interaktiven Microsite zur verständlichen und zugänglichen Visualisierung komplexer Daten für Endnutzer.",    
+challenge: "Komplexe Datensätze sollten für ein nicht-technisches Publikum verständlich gemacht werden, interaktiv, visuell ansprechend und ohne Vorwissen nutzbar.",
     approach: [
       "Konzeption einer nutzerorientierten Informationsarchitektur",
       "Auswahl und Strukturierung geeigneter Visualisierungsformen für die Daten",
@@ -107,8 +105,8 @@ const projects = [
     tags: ["Produktentwicklung", "UX/UI", "KI"],
     accentTag: "Produktentwicklung",
     role: "Konzept · Design · Entwicklung",
-    summary: "Entwicklung eines KI-gestützten PowerPoint Add-Ins für Schüler und Studierende — von der Planung über wöchentliche Team-Meetings bis zur finalen Umsetzung.",
-    challenge: "Ein KI-Tool sollte direkt in PowerPoint integriert werden, um Schüler und Studierende bei der Präsentationserstellung zu unterstützen — mit klar definierten Anforderungen, regelmäßigen Updates und einer nutzerfreundlichen Umsetzung.",
+    summary: "Entwicklung eines KI-gestützten PowerPoint Add-Ins für Schüler und Studierende, von der Planung über wöchentliche Team-Meetings bis zur finalen Umsetzung.",
+    challenge: "Ein KI-Tool sollte direkt in PowerPoint integriert werden, um Schüler und Studierende bei der Präsentationserstellung zu unterstützen, mit klar definierten Anforderungen, regelmäßigen Updates und einer nutzerfreundlichen Umsetzung.",
     approach: [
       "Planung und Definition der Anforderungen im Team",
       "Wöchentliche Team-Meetings zur Abstimmung und Weiterentwicklung",
@@ -152,6 +150,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', updateNav, { passive: true });
   updateNav();
+
+  // Nav theme: switch between light/dark based on current section
+  const navH = nav.offsetHeight;
+  const themedSections = document.querySelectorAll('[data-nav-theme]');
+
+  const navThemeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const theme = entry.target.dataset.navTheme;
+      nav.classList.toggle('nav--light', theme === 'light');
+    });
+  }, {
+    rootMargin: `-${navH}px 0px -${window.innerHeight - navH - 1}px 0px`,
+    threshold: 0,
+  });
+
+  themedSections.forEach(s => navThemeObserver.observe(s));
 
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
@@ -272,6 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     modalOverlay.classList.add('open');
     document.body.style.overflow = 'hidden';
+    modalOverlay.querySelector('.modal').scrollTop = 0;
     setTimeout(() => modalClose.focus(), 50);
   }
 
@@ -353,18 +369,32 @@ document.addEventListener('DOMContentLoaded', () => {
       tools: ['HTML', 'CSS', 'JavaScript'],
     },
     {
-      id: 'elearning', label: 'E-Learning',
-      color: '#fb923c', glow: 'rgba(251, 146, 60, 0.45)',
-      bg: 'linear-gradient(145deg, #fbbf24 0%, #f97316 100%)',
-      icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>`,
-      tools: ['Articulate 360'],
-    },
-    {
       id: 'daten', label: 'Daten & Technik',
       color: '#4ade80', glow: 'rgba(74, 222, 128, 0.45)',
       bg: 'linear-gradient(145deg, #4ade80 0%, #2dd4bf 100%)',
       icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>`,
       tools: ['SQL', 'XML', 'JSON', 'D3.js'],
+    },
+    {
+      id: 'elearning', label: 'E-Learning',
+      color: '#fb923c', glow: 'rgba(251, 146, 60, 0.45)',
+      bg: 'linear-gradient(145deg, #fbbf24 0%, #f97316 100%)',
+      icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>`,
+      tools: ['Articulate 360', 'Instructional Design', 'Lokalisierung'],
+    },
+    {
+      id: 'projektmanagement', label: 'Projektmanagement',
+      color: '#38bdf8', glow: 'rgba(56, 189, 248, 0.45)',
+      bg: 'linear-gradient(145deg, #38bdf8 0%, #6366f1 100%)',
+      icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg>`,
+      tools: ['Scrum', 'Design Thinking', 'BPMN 2.0', 'Scrumban'],
+    },
+    {
+      id: 'ki', label: 'KI & Prompting',
+      color: '#e879f9', glow: 'rgba(232, 121, 249, 0.5)',
+      bg: 'linear-gradient(145deg, #e879f9 0%, #f43f5e 100%)',
+      icon: `<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5z"/><path d="M19 14l.75 2.25L22 17l-2.25.75L19 20l-.75-2.25L16 17l2.25-.75z"/><path d="M5 17l.5 1.5L7 19l-1.5.5L5 21l-.5-1.5L3 19l1.5-.5z"/></svg>`,
+      tools: ['ChatGPT API', 'Claude API', 'Prompt Engineering', 'KI-Workflows'],
     },
     {
       id: 'tools', label: 'Tools',

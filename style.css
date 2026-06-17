@@ -1274,6 +1274,24 @@ html, body {
   color: var(--text);
 }
 
+.modal-live-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.modal-live-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 .modal-role-badge {
   display: inline-flex;
   align-items: center;

@@ -64,8 +64,9 @@ const projects = [
   },
   {
     id: 4,
-    title: "Kaffeeblog kaffeekohi.de",
+    title: "kaffeekohi",
     company: "Eigenprojekt · kaffeekohi.de",
+    link: "https://kaffeekohi.de",
     color: "#92400E",
     tags: ["Web-Entwicklung", "Full-Stack", "CMS"],
     accentTag: "Web-Entwicklung",
@@ -282,10 +283,15 @@ document.addEventListener('DOMContentLoaded', () => {
       .map(t => `<span class="tag">${t}</span>`)
       .join('');
 
+    const linkHTML = project.link
+      ? `<a class="modal-live-link" href="${project.link}" target="_blank" rel="noopener noreferrer">Website besuchen ↗</a>`
+      : '';
+
     modalContent.innerHTML = `
       <div class="modal-header">
         <p class="modal-eyebrow">${project.company}</p>
         <h2 class="modal-title" id="modalTitle">${project.title}</h2>
+        ${linkHTML}
       </div>
       <div class="modal-role-badge">${project.role}</div>
       <div class="case-study-grid">

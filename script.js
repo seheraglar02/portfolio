@@ -64,6 +64,26 @@ const projects = [
   },
   {
     id: 4,
+    title: "Kaffeeblog kaffeekohi.de",
+    company: "Eigenprojekt · kaffeekohi.de",
+    color: "#92400E",
+    tags: ["Web-Entwicklung", "Full-Stack", "CMS"],
+    accentTag: "Web-Entwicklung",
+    role: "Eigenständige Entwicklerin",
+    summary: "Eigenständige Entwicklung eines Kaffeeblogs mit vollständigem Admin-Bereich zur Verwaltung und Veröffentlichung von Artikeln – von der Konzeption bis zum Live-Betrieb unter kaffeekohi.de.",
+    challenge: "Eine vollständige Webanwendung sollte eigenständig konzipiert, entwickelt und deployed werden, inklusive eines funktionalen Admin-Bereichs, über den Artikel erstellt, bearbeitet und veröffentlicht werden können, ohne externe CMS-Abhängigkeit.",
+    approach: [
+      "Konzeption von Seitenstruktur, Nutzerführung und Content-Architektur des Blogs",
+      "Entwicklung des Frontends mit HTML, CSS und JavaScript",
+      "Implementierung eines passwortgeschützten Admin-Bereichs zur Artikelverwaltung",
+      "Erstellung, Bearbeitung und Veröffentlichung von Artikeln über das Admin-Interface",
+      "Deployment und Live-Betrieb der Website unter kaffeekohi.de"
+    ],
+    result: "Vollständig eigenständig entwickelter und live betriebener Kaffeeblog. Funktionaler Admin-Bereich ermöglicht die selbstständige Pflege und Veröffentlichung von Inhalten ohne externe Tools.",
+    tools: ["HTML", "CSS", "JavaScript", "PHP", "Admin-Dashboard"]
+  },
+  {
+    id: 5,
     title: "Website Redesign",
     company: "Hochschulprojekt · Adobe XD",
     color: "#D97706",
@@ -82,7 +102,7 @@ challenge: "Die bestehende Website wies mehrere Usability-Schwächen auf: eine u
     tools: ["Adobe XD", "Usability-Analyse", "Wireframing"]
   },
   {
-    id: 5,
+    id: 6,
     title: "Interaktive Microsite mit D3.js",
     company: "Hochschulprojekt · Teamarbeit",
     color: "#0891B2",
@@ -102,7 +122,7 @@ challenge: "Komplexe Datensätze sollten für ein nicht-technisches Publikum ver
     tools: ["D3.js", "HTML", "CSS", "JavaScript"]
   },
   {
-    id: 6,
+    id: 7,
     title: "Softwareprojekt: Autorennspiel & Client-Server-Spiel",
     company: "Hochschulprojekt · Teamarbeit",
     color: "#059669",
